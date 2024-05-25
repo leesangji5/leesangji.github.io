@@ -1,128 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>루바토 손해보험</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-        li{
-            list-style-type: none;
-        }
-        header{
-            width: 96%;
-            height: 100px;
-            margin-top: 0px;
-            margin-left: 2%;
-            border-bottom: solid 2px #ccc;
-        }
-        .clear {
-            clear: both;
-        }
-        #logo{
-            margin-top: 30px;
-            border-bottom: dotted 2px gray;
-            float: left;
-        }
-        #top{
-            float: right;
-            margin: 30px 20px 0 0;
-        }
-        nav{
-            width: 90%;
-            height: 100px;
-            margin-top: 10px;
-            margin-left: 2%;
-            margin-right: 2%;
-        }
-        nav ul{
-            margin-left: 5%;
-        }
-        nav li{
-            float: left;
-            margin-top: 20px;
-            margin-left: 3%;
-            margin-right: 3%;
-        }
-        section{
-            height: 400px;
-            float: left;
-            margin-top: 0px;
-            margin-left: 0px;
-        }
-        #mid{
-            width: 96%;
-            margin-left: 2%;
-            margin-right: 2%;
-        }
-        aside{
-            float: left;
-            margin-top: 20px;
-        }
-        aside li{
-            margin-bottom: 70px;
-        }
-        footer{
-            width: 90%;
-            border-top: solid 2px #ccc;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        #address{
-            float: left;
-            margin: 30px 0 0 10px;
-        }
-        #customer{
-            float: right;
-            margin: 30px 0 0 500px;
-        }
-    </style>
+    <title>Aggro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div>
-        <header>
-            <div id="logo">
-                신뢰로 보답하는 루바토 손해보험
-            </div>
-            <div id="top">
-                로그인 | 회원가입 | 사이트 맵 | 회사소개
-            </div>
-        </header>
-    </div>
-    <div>
-        <nav>
+    <header>
+        <div id="logo">Aggro</div>
+
+        <form id="search">
+            <input type="text" id="search_text" placeholder="검색어를 입력하세요">
+            <span class="material-symbols-outlined" id="search_icon">
+                search
+            </span>
+        </form>
+
+        <nav id="head_nav">
             <ul>
-                <li>손해보험 상식</li>
-                <li>회사소개</li>
-                <li>보험상품안내</li>
-                <li>마이페이지</li>
-                <li>고객센터</li>
-                <li>보험료안내</li>
+                <li>home</li>
+                <li>favorite</li>
+                <li>about</li>
+                <li>setting</li>
             </ul>
         </nav>
-    </div>
-    <div class="clear" id="mid">
-        <section>
-            <img src="img/main.png">
+        <div id="my_page">
+            <img id="my_page_img" src="img/my_page.png" alt="My Page">
+        </div>
+    </header>
+    <main>
+        <section id="topics_section">
+            <div id="topics_header">
+                <h1 id="top">Topics</h1>
+                <span id="num">10개</span>
+            </div>
+            <hr>
+            <div id="topics_img">
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+                <div class="topic">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div class="topic_title">Title</div>
+                </div>
+            </div>
+
+            <div id="topic_detail">
+                <div id="topic_detail_header">
+                    <h1 id="topic_name">Topic</h1>
+                    <span id="topic_per">1/10</span>
+                </div>
+                <hr>
+                <div class="topic_detail">
+                    <img src="img/fps.webp" alt="Topic Image">
+                    <div id="topic_detail">
+                        <div id="detail_topic">topic</div>
+                        <div id="detail_text">
+                            detail
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ab magni quibusdam saepe fuga labore harum, ratione, maiores, laborum fugiat pariatur perspiciatis eligendi aut inventore! Beatae expedita natus inventore similique?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex excepturi necessitatibus voluptatibus quis. Sunt ducimus quas ab est eos, possimus ea similique odio, atque deleniti ipsam? Beatae, debitis accusantium!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed, labore delectus exercitationem sequi a nobis repellendus excepturi ratione iste in molestiae sit ipsam quidem minus expedita vel quisquam placeat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rem fuga! Aliquam, excepturi assumenda praesentium eaque provident, odit optio culpa numquam iste sequi labore? Quis quisquam qui alias hic velit?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, qui enim minus magni quis eius quam esse expedita nulla odio. Tempora quibusdam commodi culpa quam odio odit esse modi voluptatem!
+                        </div>
+                        <div id="detail_btns">
+                            <button id="detail_btn">
+                                <span class="material-symbols-outlined">
+                                    arrow_back
+                                </span>
+                            </button>
+                            <button id="detail_btn">
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <aside>
-            <ul>
-                <li>보험료계산하기</li>
-                <li>손해보험FAQ</li>
-            </ul>
-        </aside>
-    </div>
-    <div>
-        <foooter class="clear">
-            <div id="address">
-                대표이사 : 김가천 | 사업자 등록번호 : 123-45-67890
+        <footer>
+            <hr>
+            <div id="footer">
+                <div id="team_name">team: &lt;div&gt;</div>
+                <div id="team_members">
+                    <ul>
+                        <li>202434648 이상지</li>
+                        <li>202434599 김재관</li>
+                        <li>202434610 박세하</li>
+                    </ul>
+                </div>
             </div>
-            <div id="customer">
-                고객센터 1588-1234
-            </div>
-        </foooter>
-    </div>
+        </footer>
+    </main>
 </body>
 </html>

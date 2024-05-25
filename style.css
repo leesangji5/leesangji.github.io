@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#search {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#search_text {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 400px;
+    height: 25px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#head_nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#head_nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+#head_nav ul li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#my_page {
+    display: flex;
+    align-items: center;
+}
+
+#my_page_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#topics_section {
+    width: 80%;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+#topics_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#num {
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+#topics_section hr {
+    height: 5px;
+    background-color: #000;
+}
+
+#topics_img {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 20px; /* Reduced gap between topics */
+    padding: 20px 0;
+    margin-bottom: 100px;
+}
+
+
+#topics_img::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    width: 15%; /* Adjusted width for better spacing */
+}
+
+.topic img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px; /* Adjusted margin to reduce spacing */
+}
+
+.topic_title {
+    text-align: center;
+}
+
+#topic_detail {
+    width: 100%;
+}
+
+.topic_detail {
+    display: flex;
+    width: 100%;
+}
+
+.topic_detail img {
+    width: 30%;
+    align-self: flex-start; /* Adjust alignment of image */
+}
+#topic_detail_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topic_name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#topic_per{
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.topic_detail img{
+    width: 30%
+}
+
+#detail_topic {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    border: solid 0px #ccc;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 0; /* Adjust padding */
+}
+
+#detail_text {
+    width: 100%;
+    height: 80%;
+    border: solid 0px #ccc;
+    padding: 0 10%; /* Adjust padding */
+    font-size: 20px;
+    word-break: break-all;
+}
+
+#detail_btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px; /* Adjust padding */
+    margin-top: auto; /* Push buttons to the bottom */
+}
+
+#detail_btn {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px; /* Add margin between buttons */
+}
+
+#detail_btn:first-child {
+    margin-left: 0; /* Remove margin for the first button */
+}
+
+#footer{
+    width: 100%;
+    display: flex;
+}
+
+#team_name{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#team_members {
+    display: flex;
+    margin-left: auto; /* Push team members to the right */
+    margin-right: 10px;
+}
