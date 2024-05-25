@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // 토픽 리스트
     var topics = [
         {
-            image: "img/fps.webp",
-            title: "topic1",
+            image: "img/rythm_game.jpg",
+            title: "리듬 게임",
             content: "Contents of Topic 1",
             link: "https://www.naver.com"
         },
@@ -21,44 +21,44 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             image: "img/fps.webp",
-            title: "topic4",
-            content: "Contents of Topic 4",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
-            title: "topic5",
-            content: "Contents of Topic 5",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
-            title: "topic6",
-            content: "Contents of Topic 6",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
-            title: "topic7",
-            content: "Contents of Topic 7",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
-            title: "topic8",
-            content: "Contents of Topic 8",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
-            title: "topic9",
-            content: "Contents of Topic 9",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
-            title: "topic10",
-            content: "Contents of Topic 10",
+            title: "coming soon",
+            content: "coming soon",
             link: "https://www.naver.com"
         }
         // 추가적인 토픽 정보들을 추가할 수 있습니다.

@@ -18,6 +18,16 @@ header {
     padding: 0 20px;
 }
 
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+a:visited {
+    color: initial; /* 기본 색상으로 유지 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
 #logo {
     font-size: 36px;
     font-weight: bold;
@@ -110,7 +120,6 @@ header {
     margin-bottom: 100px;
 }
 
-
 #topics_img::-webkit-scrollbar {
     display: none; /* Hide scrollbar for WebKit browsers */
 }
@@ -146,6 +155,7 @@ header {
     width: 30%;
     align-self: flex-start; /* Adjust alignment of image */
 }
+
 #topic_detail_header {
     display: flex;
     justify-content: space-between;
@@ -156,12 +166,12 @@ header {
     font-weight: bold;
 }
 
-#topic_per{
+#topic_per {
     font-size: 20px;
     padding-top: 50px;
 }
 
-.topic_detail img{
+.topic_detail img {
     width: 30%
 }
 
@@ -204,12 +214,12 @@ header {
     margin-left: 0; /* Remove margin for the first button */
 }
 
-#footer{
+#footer {
     width: 100%;
     display: flex;
 }
 
-#team_name{
+#team_name {
     font-size: 20px;
     margin-top: 15px;
     margin-left: 10px;
@@ -219,4 +229,65 @@ header {
     display: flex;
     margin-left: auto; /* Push team members to the right */
     margin-right: 10px;
+}
+
+.game {
+    width: 100%; /* Adjusted width for video */
+    margin-top: 200px;
+    border: solid 1px #ccc;
+}
+
+.game_title{
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    border: solid 0px #ccc;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 0; /* Adjust padding */
+}
+
+
+.game_iv {
+    display: flex;
+    justify-content: space-between; /* 좌우 여백을 동일하게 배분 */
+}
+
+.game_img{
+    width: 20%; /* 각 요소가 49%의 너비를 차지하도록 설정 */
+    border: solid 1px #ccc;
+}
+
+.game_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.game_text{
+    width: 25%;
+    font-size: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 비율에 대한 가상 요소의 높이 (9 ÷ 16 × 100) */
+    align-items: end;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#video_div{
+    float: right;
+    width: 50%;
+}
+
+.made_by{
+    color: darkgreen;
 }
