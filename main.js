@@ -4,55 +4,80 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             image: "img/fps.webp",
             title: "topic1",
-            content: "Contents of Topic 1"
+            content: "Contents of Topic 1",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic2",
-            content: "Contents of Topic 2"
+            content: "Contents of Topic 2",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic3",
-            content: "Contents of Topic 3"
+            content: "Contents of Topic 3",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic4",
-            content: "Contents of Topic 4"
+            content: "Contents of Topic 4",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic5",
-            content: "Contents of Topic 5"
+            content: "Contents of Topic 5",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic6",
-            content: "Contents of Topic 6"
+            content: "Contents of Topic 6",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic7",
-            content: "Contents of Topic 7"
+            content: "Contents of Topic 7",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic8",
-            content: "Contents of Topic 8"
+            content: "Contents of Topic 8",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic9",
-            content: "Contents of Topic 9"
+            content: "Contents of Topic 9",
+            link: "https://www.naver.com"
         },
         {
             image: "img/fps.webp",
             title: "topic10",
-            content: "Contents of Topic 10"
+            content: "Contents of Topic 10",
+            link: "https://www.naver.com"
         }
         // 추가적인 토픽 정보들을 추가할 수 있습니다.
     ];
+
+    var games = {
+        game1: {
+            title: "game1",
+            image: "img/fps.webp",
+            content: "Contents of Game 1",
+            link: "https://www.naver.com"
+        },
+        game1: {
+            title: "game1",
+            image: "img/fps.webp",
+            content: "Contents of Game 1",
+            link: "https://www.naver.com"
+        },
+    }
 
     for(var i=0; i<topics.length; i++){
         document.getElementById("topic"+String(i+1)).textContent = topics[i].title;
