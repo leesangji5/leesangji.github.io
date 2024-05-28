@@ -8,91 +8,43 @@ document.addEventListener("DOMContentLoaded", function() {
             link: "topic1.html"
         },
         {
-            image: "img/fps.webp",
-            title: "topic2",
-            content: "Contents of Topic 2",
-            link: "https://www.naver.com"
+            image: "https://img.freepik.com/premium-photo/back-view-gamer-playing-video-games-futuristic-interior_168310-197.jpg",
+            title: "리얼리즘 게임",
+            content: "즐겨하던 FPS게임이나 생존 게임이 지루하신가요? 혹은 하드코어를 즐기는 유저인가요? 사실적으로 묘사한 생동감 넘치는 두 게임을 소개합니다. 리뷰로 이동하려면 왼쪽 이미지를 클릭하세요.",
+            link: "PSH.html"
         },
         {
-            image: "img/fps.webp",
-            title: "topic3",
-            content: "Contents of Topic 3",
-            link: "https://www.naver.com"
+            image: "img/smb.png",
+            title: "플랫포머 게임",
+            content: "달리고, 점프하고, 공격하세요! 이 모든건 플랫폼 위에서 이루어집니다. 당신의 취향에 맞는 다양한 액션을 원하나요? 유명하지 않은, 숨은 갓겜을 찾고싶나요? 그렇다면 지금 당장 이미지를 클릭하세요!",
+            link: "flatformer.html"
         },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        },
-        {
-            image: "img/fps.webp",
-            title: "coming soon",
-            content: "coming soon",
-            link: "notyet.html"
-        }
-        // 추가적인 토픽 정보들을 추가할 수 있습니다.
     ];
 
-    var currentTopicIndex = 0; // 현재 토픽 인덱스
+    var currentTopicIndex = 0;
 
-    // 초기 토픽 설정
     setTopic(currentTopicIndex);
 
-    // 다음 버튼 클릭 시
     document.querySelector(".next_btn").addEventListener("click", function() {
         currentTopicIndex++;
         if (currentTopicIndex >= topics.length) {
-            currentTopicIndex = 0; // 마지막 토픽에 도달하면 처음으로 돌아감
+            currentTopicIndex = 0;
         }
         setTopic(currentTopicIndex);
     });
 
-    // 이전 버튼 클릭 시
     document.querySelector(".prev_btn").addEventListener("click", function() {
         currentTopicIndex--;
         if (currentTopicIndex < 0) {
-            currentTopicIndex = topics.length - 1; // 첫 번째 토픽에서 이전으로 가면 마지막 토픽으로 이동
+            currentTopicIndex = topics.length - 1;
         }
         setTopic(currentTopicIndex);
     });
 
-    // 토픽 이미지를 클릭 시 링크로 이동
     document.getElementById("topic_img").addEventListener("click", function() {
         window.location.href = topics[currentTopicIndex].link;
     });
 
-    // 토픽을 설정하는 함수
     function setTopic(index) {
         var topic = topics[index];
         document.getElementById("topic_img").src = topic.image;
