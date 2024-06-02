@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Aggro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="main.js" defer></script>
-
 </head>
 <body>
     <header>
         <a href="index.html">
             <div id="logo">Aggro | 월간 게임 리뷰 포럼</div>
         </a>
-
         <form id="search">
             <input type="text" id="search_text" placeholder="검색어를 입력하세요">
             <span class="material-symbols-outlined" id="search_icon">
                 search
             </span>
         </form>
-
         <nav id="head_nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -41,40 +39,55 @@
             </div>
             <hr>
             <div id="topics_img">
-                <a href="topic1.html#game1" class="topic">
-                    <img src="img/osu!.png" alt="Topic Image">
-                    <div class="topic_title" id="topic1">Osu!</div>
-                </a>
-                <a href="topic1.html#game2" class="topic">
-                    <img src="img/arcaea.png" alt="Topic Image">
-                    <div class="topic_title" id="topic2">arcaea</div>
-                </a>
-                <a href="topic1.html#game3" class="topic">
-                    <img src="img/djmax.jpg" alt="Topic Image">
-                    <div class="topic_title" id="topic3">DJmax</div>
-                </a>
-                <a href="PSH.html#six" class="topic">
-                    <img src="https://assets-global.website-files.com/5ffc95f07e6b467ddb648214/602348749e3258b3d145569e_SDIF_PhoneHeader.jpg" height="320px" alt="Topic Image">
-                    <div class="topic_title" id="topic4">Six days in Fallujah</div>
-                </a>
-                <a href="PSH.html#zomboid" class="topic">
-                    <img src="https://qi-o.qoo10cdn.com/goods_image_big/5/7/0/3/9050935703_l.jpg" alt="Topic Image">
-                    <div class="topic_title" id="topic5">Project Zomboid</div>
-                </a>
-                <a href="flatformer.html#sannabi" class="topic">
-                    <img src="img/sannabi.png" height="300px" alt="Topic Image">
-                    <div class="topic_title" id="topic6">sanabi</div>
-                </a>
-                <a href="flatformer.html#skul" class="topic">
-                    <img src="img/skul.png" height="320px" lt="Topic Image">
-                    <div class="topic_title" id="topic7">skul</div>
-                </a>
-                <a href="flatformer.html#myfriendpedro" class="topic">
-                    <img src="img/myfriendpedro.png" height="320px" alt="Topic Image">
-                    <div class="topic_title" id="topic8">myfriendpedro</div>
-                </a>
+                <div class="topic">
+                    <a href="topic1.html#game1">
+                        <img src="img/osu!.png" alt="Topic Image">
+                        <div class="topic_title" id="topic1">Osu!</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="topic1.html#game2">
+                        <img src="img/arcaea.png" alt="Topic Image">
+                        <div class="topic_title" id="topic2">arcaea</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="topic1.html#game3">
+                        <img src="img/djmax.jpg" alt="Topic Image">
+                        <div class="topic_title" id="topic3">DJmax</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="PSH.html#six">
+                        <img src="img/sixdays_thum.jpg" alt="Topic Image">
+                        <div class="topic_title" id="topic4">Six days in Fallujah</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="PSH.html#zomboid">
+                        <img src="img/zomboid_thum.jpg" alt="Topic Image">
+                        <div class="topic_title" id="topic5">Project Zomboid</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="flatformer.html#sannabi">
+                        <img src="img/sannabi_thum.png" alt="Topic Image">
+                        <div class="topic_title" id="topic6">sanabi</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="flatformer.html#skul">
+                        <img src="img/skul_thum.png" alt="Topic Image">
+                        <div class="topic_title" id="topic7">skul</div>
+                    </a>
+                </div>
+                <div class="topic">
+                    <a href="flatformer.html#myfriendpedro">
+                        <img src="img/mfp_thum.png" alt="Topic Image">
+                        <div class="topic_title" id="topic8">myfriendpedro</div>
+                    </a>
+                </div>
             </div>
-
             <div id="topic_detail">
                 <div id="topic_detail_header">
                     <h1 id="topic_name">Topic</h1>
@@ -83,7 +96,7 @@
                 <hr>
                 <div class="topic_detail">
                     <img id="topic_img" src="img/fps.webp" alt="Topic Image">
-                    <div id="topic_detail">
+                    <div id="topic_detail_content">
                         <div id="detail_topic">topic</div>
                         <div id="detail_text">
                             detail

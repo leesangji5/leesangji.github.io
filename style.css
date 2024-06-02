@@ -24,8 +24,8 @@ a {
 }
 
 a:visited {
-    color: initial; /* 기본 색상으로 유지 */
-    text-decoration: none; /* 밑줄 제거 */
+    color: initial;
+    text-decoration: none;
 }
 
 #logo {
@@ -34,10 +34,10 @@ a:visited {
 }
 
 #search {
-    flex: 1; 
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #search_text {
@@ -115,13 +115,13 @@ a:visited {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    gap: 20px; /* Reduced gap between topics */
+    gap: 20px;
     padding: 20px 0;
     margin-bottom: 100px;
 }
 
 #topics_img::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit browsers */
+    display: none;
 }
 
 .topic {
@@ -129,17 +129,21 @@ a:visited {
     flex-direction: column;
     flex-shrink: 0;
     align-items: center;
-    width: 15%; /* Adjusted width for better spacing */
+    width: 15%;
+    border: solid 1px #ccc;
 }
 
-.topic img {
+.topic a{
     width: 100%;
-    object-fit: cover;
-    margin-bottom: 5px; /* Adjusted margin to reduce spacing */
+}
+
+.topic a img {
+    width: 100%;
 }
 
 .topic_title {
     text-align: center;
+    height: 20%; /* Ensure the title takes up 20% of the topic height */
 }
 
 #topic_detail {
@@ -153,7 +157,7 @@ a:visited {
 
 .topic_detail img {
     width: 30%;
-    align-self: flex-start; /* Adjust alignment of image */
+    align-self: flex-start;
 }
 
 #topic_detail_header {
@@ -171,25 +175,19 @@ a:visited {
     padding-top: 50px;
 }
 
-.topic_detail img {
-    width: 30%
-}
-
 #detail_topic {
     display: flex;
-    justify-content: center; /* Center align horizontally */
-    align-items: center; /* Center align vertically */
-    border: solid 0px #ccc;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
     font-weight: bold;
-    padding: 10px 0; /* Adjust padding */
+    padding: 10px 0;
 }
 
 #detail_text {
     width: 100%;
     height: 80%;
-    border: solid 0px #ccc;
-    padding: 0 10%; /* Adjust padding */
+    padding: 0 10%;
     font-size: 20px;
     word-break: break-all;
 }
@@ -198,8 +196,8 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px; /* Adjust padding */
-    margin-top: auto; /* Push buttons to the bottom */
+    padding: 10px;
+    margin-top: auto;
 }
 
 #detail_btn {
@@ -207,11 +205,11 @@ a:visited {
     background-color: transparent;
     font-size: 24px;
     cursor: pointer;
-    margin-left: 10px; /* Add margin between buttons */
+    margin-left: 10px;
 }
 
 #detail_btn:first-child {
-    margin-left: 0; /* Remove margin for the first button */
+    margin-left: 0;
 }
 
 #footer {
@@ -227,34 +225,32 @@ a:visited {
 
 #team_members {
     display: flex;
-    margin-left: auto; /* Push team members to the right */
+    margin-left: auto;
     margin-right: 10px;
 }
 
 .game {
-    width: 100%; /* Adjusted width for video */
+    width: 100%;
     margin-top: 200px;
     border: solid 1px #ccc;
 }
 
-.game_title{
+.game_title {
     display: flex;
-    justify-content: center; /* Center align horizontally */
-    align-items: center; /* Center align vertically */
-    border: solid 0px #ccc;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
     font-weight: bold;
-    padding: 10px 0; /* Adjust padding */
+    padding: 10px 0;
 }
-
 
 .game_iv {
     display: flex;
-    justify-content: space-between; /* 좌우 여백을 동일하게 배분 */
+    justify-content: space-between;
 }
 
-.game_img{
-    width: 20%; /* 각 요소가 49%의 너비를 차지하도록 설정 */
+.game_img {
+    width: 20%;
     border: solid 1px #ccc;
 }
 
@@ -263,7 +259,7 @@ a:visited {
     object-fit: cover;
 }
 
-.game_text{
+.game_text {
     width: 25%;
     font-size: 20px;
 }
@@ -271,7 +267,7 @@ a:visited {
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 비율에 대한 가상 요소의 높이 (9 ÷ 16 × 100) */
+    padding-top: 56.25%;
     align-items: end;
 }
 
@@ -283,19 +279,187 @@ a:visited {
     height: 100%;
 }
 
-#video_div{
+#video_div {
     float: right;
     width: 50%;
 }
 
-.made_by{
+.made_by {
     color: darkgreen;
 }
 
-#undefined_topic{
+#undefined_topic {
     height: 500px;
     font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    #search_text {
+        width: 300px;
+    }
+
+    #topics_section {
+        width: 90%;
+    }
+
+    #topic_name {
+        font-size: 50px;
+    }
+
+    #detail_text {
+        font-size: 18px;
+    }
+    
+    #logo {
+        font-size: 32px;
+    }
+
+    #head_nav ul li {
+        font-size: 18px;
+    }
+
+    #my_page_img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        height: 80px;
+        padding: 5px 10px;
+    }
+
+    #logo {
+        font-size: 28px;
+    }
+
+    #search_text {
+        width: 200px;
+        padding: 10px;
+    }
+
+    #head_nav ul {
+        gap: 10px;
+    }
+
+    #head_nav ul li {
+        font-size: 16px;
+    }
+
+    #my_page_img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #topics_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #top {
+        font-size: 50px;
+    }
+
+    #num {
+        font-size: 18px;
+    }
+
+    .topic_detail {
+        flex-direction: column;
+    }
+
+    .topic_detail img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #topic_name {
+        font-size: 40px;
+    }
+
+    #detail_text {
+        padding: 0 5%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo {
+        font-size: 24px;
+    }
+
+    #head_nav ul {
+        gap: 5px;
+    }
+
+    #head_nav ul li {
+        font-size: 14px;
+    }
+
+    #my_page_img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #search_text {
+        width: 60%;
+    }
+
+    .topic_detail {
+        padding: 0 10px;
+    }
+
+    #topic_name {
+        font-size: 30px;
+    }
+
+    #detail_text {
+        font-size: 14px;
+    }
+
+    #detail_btns {
+        justify-content: center;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team_members {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #logo {
+        font-size: 20px;
+    }
+
+    #head_nav ul li {
+        font-size: 12px;
+    }
+
+    #my_page_img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #search_text {
+        width: 80%;
+    }
+
+    #topic_name {
+        font-size: 24px;
+    }
+
+    #detail_text {
+        font-size: 12px;
+    }
 }
